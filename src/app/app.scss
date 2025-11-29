@@ -2,17 +2,29 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  height: 100%;
+}
+
+body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background-color: #f4f5f7;
   color: #222;
 }
 
-.container {
+:host {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
+  flex: 1;
 }
 
 .tarea {
