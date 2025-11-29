@@ -1,0 +1,10 @@
+<section class="dashboard" id="inicio">
+  <h2>Listado de productos</h2>
+
+  <div class="grid-productos">
+    <app-card-producto
+      *ngFor="let producto of productos"
+      [producto]="producto"
+    ></app-card-producto>
+  </div>
+</section>

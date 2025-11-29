@@ -1,0 +1,9 @@
+<article class="card-producto">
+  <header class="card-header">
+    <h3>{{ producto.nombre }}</h3>
+    <span class="tag-oferta" *ngIf="producto.enOferta">OFERTA</span>
+  </header>
+  <div class="card-body">
+    <p class="precio">Precio: {{ producto.precio | currency:'MXN':'symbol':'1.0-0' }}</p>
+  </div>
+</article>

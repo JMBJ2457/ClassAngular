@@ -1,0 +1,21 @@
+.dashboard {
+  width: 100%;
+}
+
+.dashboard h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Para pantallas grandes, que se vea tipo dos columnas centradas */
+@media (min-width: 900px) {
+  .dashboard {
+    max-width: 700px;
+  }
+}
